@@ -1,0 +1,84 @@
+
+
+views-----|-------------------|
+          auth               layout
+          |--login.pug        |--index.pug
+          |--registro.pug     
+
+
+Tenemos el anterior arbol de archivos.
+
+En el login tenemos: 
+
+          extends ../layout/index
+          
+          
+          block content
+              div
+                  h2 Login
+                  if autenticado
+                      p Autenticado
+                  else
+                      p No autenticado
+
+En registro tenemos:
+
+                            extends ../layout/index
+                            
+                            
+                            block content
+                                div
+                                    h2 Registro
+                                    if autenticado
+                                        p Registrado
+                                    else
+                                        p No registrado
+
+
+Y en el index tenemos: 
+
+
+
+            
+            doctype html
+            html(lang="en")
+                head
+                    meta(charset="UTF-8")
+                    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+                    title Bienes Raices
+                    link(rel="stylesheet", href="../../public/css/app.css")
+                body.min-h-screen.bg-gray-500 
+                    main.mx-auto.container.mt-10.px-2 
+                        block content
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                                      
